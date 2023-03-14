@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>  
+       <title>Contact form</title> 
+    <meta charset="utf-8">
+	<meta name="description" content="Contant us, send a query"/>
+    <meta name="keywords" content="Contact,Query, ask question"/>
+    
+<style>
+        label {
+            float: left;
+            width: 112px;
+            padding-right: 10px;
+            text-align: right;}
+        input {
+            margin-left: 1em;
+            margin-bottom: .5em;
+            width: 220px;}
+        #button, #reset {
+            margin-top: .5em;
+            width: 8em;
+            background-color: orange;
+            border: 2px solid black;
+        }
+        input[type="checkbox"] {width: 15px;}
+        #button {
+            margin-left: 138px;}
+        #reset {
+            margin-left: 82px;}    
+        input[type="radio"] {width: 10px;}
+
+        .required {
+            font-weight:bold;
+            color:red;     }
+        body{
+            font-family : sans-serif;
+            background-image: url(../Form/Images/Saint_Peters.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 10px;
+        }
+
+        main {
+            margin: 15px 200px;
+            padding: 20px;
+            border: black solid 1px;
+            background: white;
+            min-height: 500px;
+        }
+            header p{
+                
+            position: relative;
+            top: 40%;
+            font-style: italic;
+                text-align: center;}
+        ul
+        {
+            
+            list-style: none;
+        }
+        li
+        {   
+            display: inline-block;
+            
+        }
+
+        footer a
+        {
+            text-decoration: none
+        }
+
+ </style>
+
+</head>
+    
+<body>
+    <header>
+    <p> Any queries or feedback please Complete and Submit (position relative top 40% - center) </p>
+      
+</header>
+<nav>
+    <ul>
+        <li>Home</li>
+        <a href="details.html"><li>Holidays</li></a>
+        <li class="selected">Contact Us</li></a>
+        <a href="map.html"><li>Map</li></a>
+    </ul>
+</nav>  
+    <main>
+     <section>
+    	<h3>Please enter the following information:  (form action="http:/foo.com" method="get") </h3>
+		<form action="http:/foo.com" method="put">
+			<label for="first_name">First name:<span class="required">*</span></label>
+			<input type="text" name="first_name" id="first_name" autofocus required><br>
+			<label for="last_name">Last name:<span class="required">*</span></label>
+			<input type="text" name="last_name" id="last_name" required><br>
+			<label for="email">Email:<span class="required">*</span></label>
+			<input type="email" name="email" id="email" required placeholder="johndoe@example.com">
+           <br>	
+            <label for="gender">Gender :</label>
+             <input type="radio" id= "gender" name="gender" value="male"> Male
+             <input type="radio" id= "gender" name="gender" value="female"> Female
+            <input type="radio" id= "gender" name="gender" value="other" checked> Other <br>
+			<label for ="internet"> Heard of us:</label>
+            <fieldset>
+            <input type="checkbox" id="internet" name="internet" value="internet" checked> Internet  <br>
+            <input type="checkbox" class="marginl" id="hearr" name="paper" value="paper">  Newspaper <br>
+            <input type="checkbox"  class="marginl" id="hear" name="friend" value="friend">  Friend<br>
+            <input type="checkbox"  class="marginl" id="hear2" name="Add" value="Add">  Others <br>
+            </fieldset>
+            <br>
+            <label for="message">Query  :  </label>
+            <textarea cols="40"rows="6"  id="message" name="message" placeholder="Your message must be less than 200 characters"  data-maxlength="200"></textarea> <br>
+			<input type="submit" name="submit" id="button" value="Submit">
+            <input type="reset" name="reset" id="reset">
+
+		</form>	
+        <p style="margin-left: 138px"> <span class="required">*</span> <em> indicates a required field </em></p>
+	   </section>
+     </main>
+    
+    
+    <footer>
+        <ul>
+            <li><a href="inex.html">Home</a></li>
+            <li><a href="details.html">Sun Holidays</a></li>
+            <li><a href="Contactform.html" style=" color: #f3b104;">Contact Us</a></li>
+            <li><a href="map.html" >Map</a></li>
+        </ul>
+		<p>&copy; 2021 Holiday Club</p>
+	</footer>
+    </body>
+    
+    </html>
